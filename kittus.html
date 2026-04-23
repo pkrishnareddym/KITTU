@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KITTU Online Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; background:#f5f5f5; }
+        header { background:#2874f0; color:#fff; padding:16px 32px; display:flex; align-items:center; justify-content:space-between; }
+        .logo { font-size:2em; font-weight:bold; }
+        nav a { color:#fff; text-decoration:none; margin:0 16px; font-weight:500; }
+        .search-bar { flex:1; margin:0 32px; }
+        .search-bar input { width:100%; padding:8px; border-radius:4px; border:none; }
+        .categories { background:#fff; display:flex; justif        <!-- ...existing code... -->
+        <style>
+            /* ...existing code... */
+            .action-btns {
+                display: flex;
+                gap: 12px;
+                margin-top: 8px;
+            }
+            .action-btn {
+                background: #2874f0;
+                color: #fff;
+                border: none;
+                padding: 6px 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 0.95em;
+                transition: background 0.2s;
+            }
+            .action-btn:hover {
+                background: #174ea6;
+            }
+        </style>
+        <!-- ...existing code... -->
+        <div class="products">
+            <div class="product-card">
+                <!-- ...existing code... -->
+                <button class="buy-btn">Buy Now</button>
+                <div class="action-btns">
+                    <button class="action-btn">Add to Cart</button>
+                    <button class="action-btn">Wishlist</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <!-- ...existing code... -->
+                <button class="buy-btn">Buy Now</button>
+                <div class="action-btns">
+                    <button class="action-btn">Add to Cart</button>
+                    <button class="action-btn">Wishlist</button>
+                </div>
+            </div>
+            <!-- Repeat for other product-card blocks -->
+        <!-- ...existing code... -->y-content:center; padding:16px 0; box-shadow:0 2px 4px rgba(0,0,0,0.05);}
+        .categories a { margin:0 24px; color:#2874f0; text-decoration:none; font-weight:600; }
+        .products { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:24px; padding:32px; }
+        .product-card { background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.07); padding:16px; display:flex; flex-direction:column; align-items:center; }
+        .product-card img { width:160px; height:160px; object-fit:contain; margin-bottom:12px; }
+        .product-title { font-size:1.1em; font-weight:600; margin-bottom:8px; text-align:center; }
+        .product-price { color:#388e3c; font-size:1.2em; font-weight:bold; margin-bottom:8px; }
+        .product-desc { font-size:0.95em; color:#555; margin-bottom:12px; text-align:center; }
+        .buy-btn { background:#ff3f6c; color:#fff; border:none; padding:8px 24px; border-radius:4px; cursor:pointer; font-weight:600; }
+        footer { background:#222; color:#fff; text-align:center; padding:24px 0; margin-top:32px; }
+        @media (max-width:600px) {
+            .products { grid-template-columns:1fr; padding:16px; }
+            header { flex-direction:column; align-items:flex-start; }
+            .search-bar { margin:16px 0; width:100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">KITTU Store</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Deals</a>
+            <a href="#">Fashion</a>
+            <a href="#">Electronics</a>
+            <a href="#">Cart</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, brands and more...">
+        </div>
+        <div>
+            <a href="#" style="color:#fff; font-weight:600;">Login</a>
+        </div>
+    </header>
+    <div class="categories">
+        <a href="#">Mobiles</a>
+        <a href="#">Clothing</a>
+        <a href="#">Home & Kitchen</a>
+        <a href="#">Beauty</a>
+        <a href="#">Appliances</a>
+        <a href="#">Toys</a>
+    </div>
+    <main>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Mobile">
+                <div class="product-title">Smartphone XYZ</div>
+                <div class="product-price">₹14,999</div>
+                <div class="product-desc">6.5" Display, 128GB, 48MP Camera, Fast Charging</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1526178613658-3f1622045542?auto=format&fit=crop&w=400&q=80" alt="Dress">
+                <div class="product-title">Women's Summer Dress</div>
+                <div class="product-price">₹799</div>
+                <div class="product-desc">Floral Print, Cotton, Sizes S-XL</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Mixer">
+                <div class="product-title">Kitchen Mixer Grinder</div>
+                <div class="product-price">₹2,499</div>
+                <div class="product-desc">750W, 3 Jars, 2 Year Warranty</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Toy">
+                <div class="product-title">Kids Toy Car</div>
+                <div class="product-price">₹499</div>
+                <div class="product-desc">Remote Controlled, Ages 3+</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Beauty">
+                <div class="product-title">Beauty Kit</div>
+                <div class="product-price">₹1,299</div>
+                <div class="product-desc">Makeup Essentials, 10 Items</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Headphones">
+                <div class="product-title">Wireless Headphones</div>
+                <div class="product-price">₹2,199</div>
+                <div class="product-desc">Bluetooth, 20hr Battery, Noise Cancelling</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 KITTU Store. All rights reserved. | Inspired by Flipkart, Amazon & Meesho
+    </footer>
+</body>
+</html></div>
