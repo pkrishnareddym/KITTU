@@ -1,15 +1,26 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+import random
 
-app = FastAPI(title="KittU Health Genie API")
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def root():
-    return {"status":"alive"}
+    return {"status":"KittU Health Genie Backend Live"}
 
-@app.get("/predict-risk")
-def predict():
+@app.get("/vitals")
+def vitals():
     return {
-        "heart_risk": 22,
-        "brain_risk": 8,
-        "status":"stable"
+        "heart_rate": random.randint(65,95),
+        "oxygen": random.randint(95,100),
+        "temp": round(random.uniform(36.4,37.2),1),
+        "risk":"LOW"
     }
